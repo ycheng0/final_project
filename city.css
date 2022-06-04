@@ -1,0 +1,158 @@
+
+/* NavMenu  & Background*/
+
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+}
+
+
+body {
+  background: #FAEDCD;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+header{
+  background-color: #D4A373;
+  padding: 30px;
+} 
+
+.navMenu {
+  position: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
+}
+
+.navMenu a {
+  color: #405a01;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 800;
+  display: inline-block;
+  width: 200px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: #C3CCA6;
+}
+
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: #C3CCA6;
+  border-radius: 200%;
+  opacity: 0;
+  -webkit-transform: translateX(800px);
+  transform: translateX(800px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(110px);
+  transform: translateX(110px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(285px);
+  transform: translateX(285px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+} */
+
+
+/* 
+
+
+
+main {
+    display: flex;
+}
+section {
+    margin: 10px;
+    border: solid 1px #CCC;
+    padding-bottom: 20px;
+}
+
+section h2, section p, section button {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+}
+section p {
+    line-height: 1.4em;
+}
+section img {
+    width: 800px;
+    height: 600px;
+    display:100%;
+}  */
+
+/* ----test
+
+body * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10px;
+}
+
+main, section, article{
+  border: solid 1px #000;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+section, article{
+  width: calc(25% - 20px); /* accounts for margin 
+  /* margin: 10px; */
+  /*padding: 10px;
+}  */
+
+/* @media only screen and (max-width: 1000px) {
+  section, article {
+      width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  section, article {
+      width: 100%;
+  }
+} */

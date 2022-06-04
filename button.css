@@ -1,0 +1,226 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+/* NavMenu  & Background*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  color:#405a01;
+}
+
+
+body {
+  background: #FAEDCD;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+header{
+    background-color: #D4A373;
+    padding: 30px;
+    display:flex;
+    margin-left: 0px;
+    margin-right: -100px;
+    text-align: center;
+  }
+
+.navMenu {
+  position: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
+  margin-left:450px;
+  text-align: center;
+  margin-top:20px;
+}
+
+.navMenu a {
+  color: #405a01;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 800;
+  display: inline-block;
+  width: 200px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: #C3CCA6;
+}
+
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: #C3CCA6;
+  border-radius: 200%;
+  opacity: 0;
+  -webkit-transform: translateX(800px);
+  transform: translateX(800px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(100px);
+  transform: translateX(100px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(300px);
+  transform: translateX(300px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(500px);
+  transform: translateX(500px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(700px);
+  transform: translateX(700px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+
+section {
+    margin: 10px smooth;
+    border: solid 1px transparent;
+    padding-bottom: 20px;
+}
+section h2, section p, section article{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+section p {
+    line-height: 1.4em;
+}
+section img {
+    /* width: 100%; */
+    size: 50%;
+    width:400px;
+    height: 300px;
+    border-radius: 8px;
+    display: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    main {
+        flex-wrap: wrap;
+    }
+    section {
+        width: calc(50% - 20px)
+    }
+    .navMenu .dot { background: transparent;
+    }
+    .navMenu{
+      flex-wrap:wrap;
+    }
+  
+}
+
+@media only screen and (max-width: 600px) {
+    section {
+        width: 100%;
+    }
+    header{
+      flex-wrap: wrap;
+    }
+    .navMenu .dot {  background: transparent;
+    }
+    .navMenu{
+      flex-wrap:wrap;
+    }
+}
+/*the click button*/
+.modal-bg {
+    background: rgba(50, 50, 50, 0.2);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    width: 60vw;
+    height: auto;
+    max-height: 80vh;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.close {
+    align-self: flex-end;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-body {
+    overflow-y: auto;
+}
+
+/* .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    align-content: flex-start;
+    padding: 10px;
+    align-items: center;
+    border-bottom: solid 1px #CCC;
+} */
+
+.row{
+  display:flex;
+  align-items: center;
+}
+
+.row img{
+    size:  50%;
+    width:400px;
+    height: 300px;
+    border-radius: 8px;
+    display: center;
+}
+/* .recs{
+  display: flex;
+} */
+
+/* .recs .img_div{
+  margin-right:10px;
+}
+.recs div p{
+  margin-top: 100px;
+} */

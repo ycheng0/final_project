@@ -1,0 +1,249 @@
+
+/* NavMenu  & Background*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+}
+
+
+body {
+  background: #FAEDCD;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+header{
+  background-color: #D4A373;
+  padding: 30px;
+  display:flex;
+  margin-left: 0px;
+  margin-right: -100px;
+  text-align: center;
+
+}
+
+.navMenu {
+  position: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-10%,-10%);
+  transform: translate(-10%, -10%);
+  margin-left:450px;
+  text-align: center;
+  margin-top:20px;
+}
+
+article h2{
+  font-size: xx-large;
+  font-style: "Marker Felt", sans-serif;
+  text-align: left;
+  margin-top:50px;
+
+
+}
+
+article div{
+  margin-top: 80px;
+}
+
+article{
+  display:flex;
+  align-content: left;
+  margin-top:-300px;
+  margin-left:20px;
+
+}
+
+.navMenu a {
+  color: #405a01;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 800;
+  display: inline-block;
+  width: 200px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: #C3CCA6;
+}
+
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: #C3CCA6;
+  border-radius: 400%;
+  opacity: 0;
+  -webkit-transform: translateX(800px);
+  transform: translateX(800px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(100px);
+  transform: translateX(100px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(300px);
+  transform: translateX(300px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(500px);
+  transform: translateX(500px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(700px);
+  transform: translateX(700px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+/* Photo slide */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.pic-ctn {
+  /* width: 100vw; */
+  width:400px;
+  height: 300px;
+  position: right;
+  size:60%;
+  margin-left:150px;
+}
+
+.pic-ctn img{
+  max-width:100%;
+  max-height:100%;
+  margin-left: 100px;
+}
+
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+.pic-ctn {
+  position: relative;
+  width: 100vw;
+  height: 300px;
+  margin-top: 15vh;
+  size: 60%;
+
+}
+
+.pic-ctn > img {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 100px);
+  opacity: 0;
+  animation: display 10s infinite;
+  
+
+}
+
+
+img:nth-child(2) {
+  animation-delay: 2s;
+}
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+img:nth-child(4) {
+  animation-delay: 6s;
+}
+img:nth-child(5) {
+  animation-delay: 8s;
+}
+
+img:nth-child(6) {
+  animation-delay: 10s;
+}
+
+img:nth-child(7) {
+  animation-delay: 12s;
+}
+
+@media only screen and (max-width: 1000px) {
+  main {
+      flex-wrap: wrap;
+  }
+  section {
+      width: calc(50% - 30px);
+  }
+  .pic-ctn{
+    flex-wrap: wrap;
+    width: cal(50%-20px);
+  }
+  .navMenu .dot {  background: transparent;
+  }
+  .navMenu{
+    flex-wrap:wrap;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+      width: 100%;
+  }
+  .pic-ctn{
+    flex-wrap: wrap;
+  }
+  .navMenu .dot {  background: transparent;
+  }
+  .navMenu{
+    flex-wrap:wrap;
+  }
+}
+
+/* trying */
+.pic{
+  width:500px;
+}
